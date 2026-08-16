@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kroger Enterprise Onboarding — Franklin Cheng</title>
+<meta name="description" content="Designing the onboarding layer for Kroger's enterprise item-management platform, including a role-aware AI onboarding assistant." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="brand">Franklin Cheng<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">Journey</a></li>
+      <li><a href="../projects.html" class="active">Work</a></li>
+      <li><a href="../assets/files/Franklin_Cheng_Resume.pdf" class="btn" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="case-hero">
+  <div class="wrap" style="max-width: 820px;">
+    <div class="tags"><span class="tag industry">Industry · Internship</span></div>
+    <h1>Designing the Onboarding Layer for Kroger's Enterprise Item Platform</h1>
+    <p class="lede">A three-layer learning framework and a role-aware AI onboarding assistant, built to carry ten user groups through a migration off legacy systems and into a mission-critical merchandising and supply-chain tool.</p>
+
+    <div class="case-meta">
+      <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
+      <div><div class="label">Organization</div><div class="value">The Kroger Co.</div></div>
+      <div><div class="label">Duration</div><div class="value">May 2026 – Present</div></div>
+      <div><div class="label">Methods</div><div class="value">Journey mapping, contextual inquiry, interviews, focus groups</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="case-body">
+  <div class="wrap" style="max-width: 900px;">
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">Context</span>
+        <h2>A system too important to learn by trial and error</h2>
+      </div>
+      <div class="content">
+        <p>Kroger's item-management platform sits at the center of merchandising and supply-chain operations — the system of record that ten different role-specific teams touch every day to keep items, pricing, and inventory data correct across the enterprise. As the company began migrating users off the legacy tools this platform replaces, there was no structured way to teach ten very different roles how to actually work inside it.</p>
+        <p>Getting onboarding wrong here isn't a minor friction cost. A confused edit to item data can ripple into pricing, inventory, and fulfillment across the business. My job was to design the layer that stands between "we migrated the system" and "people can actually trust themselves to use it."</p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">My Role &amp; Approach</span>
+        <h2>Research first, then design in three layers</h2>
+      </div>
+      <div class="content">
+        <p>I led the onboarding strategy end to end, working alongside 4 senior product designers and 5 product managers. Before designing anything, I ran mixed-method research — journey mapping, contextual inquiry, interviews, and focus groups — with more than 10 user groups to understand where their workflows actually broke down, role by role.</p>
+        <p>Out of that research, I designed a <strong>three-layer learning support framework</strong> rather than a single generic tutorial:</p>
+        <ul>
+          <li><strong>A main guide</strong> — the shared mental model every role needs, showing where the platform adds value against the old, error-prone way of working.</li>
+          <li><strong>Role-specific guides</strong> — tailored walkthroughs for each of the 10 user groups, so a merchandiser and a supply-chain analyst aren't taught the platform through the same lens.</li>
+          <li><strong>A role-aware AI onboarding assistant</strong> — an in-platform agent I configured with custom prompts and knowledge context, so users could ask plain-language questions about their own workflows instead of hunting through documentation.</li>
+        </ul>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/guide-main.png" alt="Page from the main onboarding guide showing a before/after comparison of a workflow moment, with the platform name redacted." />
+          <figcaption>From the main guide — each "moment" pairs the old, error-prone workflow against the new one, in the user's own words.</figcaption>
+        </figure>
+
+        <div class="figure-row">
+          <figure class="figure">
+            <img src="../assets/img/kroger/guide-cover.png" alt="Cover page of the onboarding guide" />
+            <figcaption>Main guide cover</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/img/kroger/guide-user-specific.png" alt="Table of contents for a role-specific onboarding guide" />
+            <figcaption>One of ten role-specific guide tracks</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">The AI Layer</span>
+        <h2>Teaching an assistant to onboard, not just answer</h2>
+      </div>
+      <div class="content">
+        <p>The AI assistant was the piece I owned most directly. Rather than a generic chatbot bolted onto the platform, I wrote the system prompt, structured the knowledge context, and built reusable "skills" so the assistant could give role-aware guidance — recognizing whether someone was transitioning from the legacy system or brand new to the platform, and adjusting its answers accordingly.</p>
+        <p>The goal was to reduce how often a confused user had to interrupt a teammate or file a support ticket just to complete a routine task, especially during the highest-friction weeks of the legacy migration.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/custom-agent.png" alt="Configuration screen for the custom AI onboarding assistant, showing system prompt and user instructions fields, with the platform name redacted." />
+          <figcaption>Configuring the onboarding assistant — system prompt, user-facing instructions, and knowledge context.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">Alignment</span>
+        <h2>Designing the story, not just the flow</h2>
+      </div>
+      <div class="content">
+        <p>A framework like this only works if the org actually adopts it. I presented the onboarding vision and implementation roadmap to more than 50 cross-functional stakeholders across product, engineering, and business — the same instinct from documentary filmmaking showing up again: findings and frameworks only matter if you can make the room feel why they matter.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/research-session.png" alt="Notes from a contextual inquiry / user research session" />
+          <figcaption>Contextual inquiry with a user group, ahead of designing their role-specific guide track.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">Impact</span>
+        <h2>Where this stands</h2>
+      </div>
+      <div class="content">
+        <div class="stat-row">
+          <div class="stat-box"><div class="num">10</div><div class="label">role-specific user groups mapped &amp; designed for</div></div>
+          <div class="stat-box"><div class="num">50+</div><div class="label">cross-functional stakeholders aligned on the roadmap</div></div>
+          <div class="stat-box"><div class="num">2</div><div class="label">end-to-end enterprise workflows redesigned in the component-based design system</div></div>
+        </div>
+        <p>The framework is now the onboarding path for teams migrating off the legacy system, pairing structured guides with an AI assistant that gives people role-specific help without waiting on a teammate.</p>
+      </div>
+    </div>
+
+    <div class="reflect-box">
+      <span class="eyebrow">Reflection</span>
+      <p style="margin-bottom:0;">This project is the clearest version of my journey I can point to: the same instinct that made me want to sit with people until I understood their situation — from anthropology — showed up as contextual inquiry with ten different roles. And the instinct to make something an audience could feel — from filmmaking — showed up as a guide and an assistant designed around each role's actual moment of confusion, not a generic tutorial.</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="case-nav">
+    <a href="../projects.html">
+      <span class="dir">← Back to</span>
+      <span class="title">All Work</span>
+    </a>
+    <a href="wlc-summer-learning.html" class="next">
+      <span class="dir">Next project →</span>
+      <span class="title">Exploring Summer in WLC Schools</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:6px;">Franklin Cheng<span>.</span></div>
+      <div class="footer-note">M.S. Human Factors &amp; Ergonomics (UX) · San José State University</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:franklin_cheng@outlook.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/franklin-cheng-b06238227" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="../assets/files/Franklin_Cheng_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
