@@ -331,6 +331,24 @@ footer {
 }
 .reflect-box .eyebrow { margin-bottom: 12px; }
 
+.diamond-wrap { margin: 6px 0 30px; }
+.diamond-wrap svg { display: block; width: 100%; height: auto; }
+.diamond-wrap.compact { max-width: 480px; margin: 2px 0 22px; }
+.diamond-legend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0 0 8px;
+}
+.diamond-legend div { font-size: 0.86rem; color: var(--ink-soft); }
+.diamond-legend strong { display: block; font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+
+.overview-band {
+  padding: 30px 0 6px;
+  border-bottom: 1px solid var(--line);
+}
+.overview-band .lede { max-width: 720px; }
+
 .case-nav {
   display: flex;
   justify-content: space-between;
@@ -379,6 +397,7 @@ footer {
   .figure-row { grid-template-columns: 1fr; }
   .chapter { grid-template-columns: 1fr; gap: 10px; }
   .skills-grid { grid-template-columns: 1fr; }
+  .diamond-legend { grid-template-columns: repeat(2, 1fr); }
   .nav-toggle { display: block; }
   .nav-links {
     position: absolute;
