@@ -321,7 +321,29 @@ footer {
 .figure { margin: 26px 0; }
 .figure img { border: 1px solid var(--line); box-shadow: var(--shadow); }
 .figure figcaption { margin-top: 10px; font-size: 0.86rem; color: var(--ink-soft); font-family: var(--mono); }
-.figure-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.figure-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.figure-row.three { grid-template-columns: 1fr 1fr 1fr; }
+.figure-row.asym { grid-template-columns: 1fr 1.6fr; }
+.figure.narrow { max-width: 260px; }
+.figure.narrow img { margin: 0 auto; }
+
+.role-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin: 20px 0; }
+.role-group { background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.role-group h4 { font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sage); margin: 0 0 12px; }
+.role-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.role-pill { font-size: 0.82rem; color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; }
+
+.decision-box { border: 1px dashed var(--line); border-radius: var(--radius); padding: 22px 24px; margin: 22px 0; background: rgba(46,71,86,0.03); }
+.decision-box h4 { margin: 0 0 8px; font-family: var(--serif); font-size: 1.05rem; }
+
+.case-body code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: rgba(46,71,86,0.08);
+  color: var(--ink-blue);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
 
 .reflect-box {
   background: linear-gradient(160deg, rgba(193,80,46,0.06), rgba(79,99,87,0.05));
@@ -394,7 +416,8 @@ footer {
   .case-body .col { grid-template-columns: 1fr; gap: 14px; }
   .case-body .col .colhead { position: static; }
   .stat-row { grid-template-columns: 1fr; }
-  .figure-row { grid-template-columns: 1fr; }
+  .figure-row, .figure-row.three, .figure-row.asym { grid-template-columns: 1fr; }
+  .role-groups { grid-template-columns: 1fr; }
   .chapter { grid-template-columns: 1fr; gap: 10px; }
   .skills-grid { grid-template-columns: 1fr; }
   .diamond-legend { grid-template-columns: repeat(2, 1fr); }

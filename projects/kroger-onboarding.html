@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kroger Enterprise Onboarding — Franklin Cheng</title>
-<meta name="description" content="A Double Diamond process to design the onboarding and transition experience for Kroger's enterprise item-management platform, including a role-aware AI assistant." />
+<meta name="description" content="A Double Diamond process to design the onboarding and transition experience for Kroger's enterprise item-management platform, including a role-aware AI assistant and a living maintenance framework." />
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,13 +31,13 @@
   <div class="wrap" style="max-width: 820px;">
     <div class="tags"><span class="tag industry">Industry · Internship</span></div>
     <h1>Bridging Legacy to Modern: Onboarding for Kroger's Enterprise Item Platform</h1>
-    <p class="lede">Item data is the backbone of Kroger's business. I ran a Double Diamond process — from SME interviews through a shipped three-layer support framework — to design the onboarding and transition experience that carries teams off fragmented legacy systems and spreadsheets and into a single, centralized item-management platform.</p>
+    <p class="lede">Item data is the backbone of Kroger's business. I ran a Double Diamond process — from cross-functional alignment through SME interviews to a shipped three-layer support framework — to design the onboarding and transition experience that carries teams off fragmented legacy systems and spreadsheets and into a single, centralized item-management platform.</p>
 
     <div class="case-meta">
       <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
       <div><div class="label">Organization</div><div class="value">The Kroger Co.</div></div>
       <div><div class="label">Duration</div><div class="value">May 2026 – Present</div></div>
-      <div><div class="label">Methods</div><div class="value">Double Diamond — interviews, affinity mapping, JTBD, blueprinting, UAT</div></div>
+      <div><div class="label">Methods</div><div class="value">Stakeholder alignment, Double Diamond, system-prompt design, maintenance planning</div></div>
     </div>
   </div>
 </header>
@@ -46,13 +46,13 @@
   <div class="wrap">
     <span class="eyebrow">Overview</span>
     <h2 style="margin-bottom:14px;">What I did</h2>
-    <p class="lede">I led the end-to-end design of the onboarding and transition experience for Kroger's new enterprise item-management platform. Working across eight distinct user groups, I ran discovery interviews and contextual inquiry, synthesized the findings into per-group problem definitions, mapped the support structure the transition would need, validated it directly with users, then shipped a three-layer framework — a main guide, role-specific guides, and a role-aware AI assistant.</p>
+    <p class="lede">I led the end-to-end design of the onboarding and transition experience for Kroger's new enterprise item-management platform (internally, IME). Working across eight distinct user groups, I aligned cross-functionally on timeline and dependencies, ran discovery interviews, synthesized findings into per-group problem definitions, mapped and validated a support structure, then shipped a three-layer framework — a main guide, role-specific guides, and a role-aware AI assistant — along with the maintenance structure for the team to keep it alive after I'm gone.</p>
 
     <div class="stat-row" style="grid-template-columns:repeat(4,1fr);">
-      <div class="stat-box"><div class="num">20+</div><div class="label">SMEs interviewed across the org during Discover</div></div>
-      <div class="stat-box"><div class="num">4 / 8</div><div class="label">user groups shipped this internship — baseline set for the rest by EOFY</div></div>
-      <div class="stat-box"><div class="num">50+</div><div class="label">cross-functional stakeholders aligned on the roadmap</div></div>
-      <div class="stat-box"><div class="num">3</div><div class="label">support layers shipped: guide, role-specific guides, AI assistant</div></div>
+      <div class="stat-box"><div class="num">4</div><div class="label">User Groups — developed onboarding material for 4 user groups</div></div>
+      <div class="stat-box"><div class="num">↻</div><div class="label">Onboarding Structure — designed and established a reusable structure for future rollouts</div></div>
+      <div class="stat-box"><div class="num">AI</div><div class="label">Faster Support, Powered by AI — a custom agent that tailors support to individual user needs</div></div>
+      <div class="stat-box"><div class="num">◈</div><div class="label">Maintenance Framework — centralized Confluence documentation and reusable file-conversion tools</div></div>
     </div>
   </div>
 </section>
@@ -67,8 +67,24 @@
       </div>
       <div class="content">
         <p>Every item's data — its attributes, pricing, packaging, distribution rules — determines everything downstream: what shows up at a distribution center, how it moves through the supply chain, and what a customer finds on the shelf at a Kroger store. Get that data wrong, or too slow, and the effects ripple across the entire business.</p>
-        <p>But the way that data actually gets managed today is fragmented: multiple legacy systems and countless spreadsheets, stitched together as much by institutional memory as by process. Kroger's modernization effort aims to retire those legacy systems and Excel-centered workflows in favor of a single, centralized item-management platform.</p>
+        <p>But the way that data actually gets managed today is fragmented: multiple legacy systems and countless spreadsheets, stitched together as much by institutional memory as by process. Kroger's modernization effort aims to retire those legacy systems and Excel-centered workflows — <strong>manual and fragmented</strong> — in favor of a single, centralized item-management platform that's <strong>unified and intuitive</strong>.</p>
         <p><strong>My project was to design the bridge between the two</strong> — the onboarding and transition experience that would carry each role-specific user group from the old way of working into the new one, without breaking the flow of a business that runs on this data every day.</p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">Cross-Functional Alignment</span>
+        <h2>Before the double diamond: aligning on the timeline</h2>
+      </div>
+      <div class="content">
+        <p>A project like this doesn't start with research — it starts with alignment. Before I ran any interviews, I worked with <strong>5 product managers and 3 product designers, across 2 separate teams</strong> — task management and edit experience — to align on the onboarding timeline and the dependencies between our workstreams. Onboarding couldn't be designed in a vacuum: it had to land in sync with each team's own launch dates, feature freezes, and cutover plans.</p>
+        <p>That meant constant, ongoing communication — not a single kickoff meeting. I stayed in the loop on priority shifts and shipped-date changes from both teams so the onboarding plan never fell out of sync with what was actually being built.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/onboarding-planning-meeting.png" alt="Microsoft Teams call reviewing a transition-plan spreadsheet, showing the eight PIM user groups and a launch timeline with pre-launch, launch, and post-launch milestones" />
+          <figcaption>Planning the transition timeline with cross-functional partners — the eight user groups and the pre-launch → launch → post-launch milestones we aligned on together.</figcaption>
+        </figure>
       </div>
     </div>
 
@@ -78,7 +94,7 @@
         <h2>A Double Diamond, run twice</h2>
       </div>
       <div class="content">
-        <p>I structured the project as a Double Diamond: one diamond to understand the problem, one to build the solution. Discover and Define converged on a clear picture of who was affected and how they actually worked today. Develop and Deliver diverged again to design the support structure, validate it with real users, then ship and iterate.</p>
+        <p>With the timeline aligned, I structured the research and design work as a Double Diamond: one diamond to understand the problem, one to build the solution. Discover and Define converged on a clear picture of who was affected and how they actually worked today. Develop and Deliver diverged again to design the support structure, validate it with real users, then ship and iterate.</p>
 
         <div class="diamond-wrap">
           <svg width="100%" viewBox="0 0 920 214" role="img" aria-label="Double Diamond process: Discover, Define, Develop, Deliver">
@@ -128,6 +144,50 @@
           <img src="../assets/img/kroger/research-session.png" alt="Notes from a contextual inquiry session with a user group" />
           <figcaption>Contextual inquiry with a user group — watching how they actually work in the legacy system, not just how the process says they should.</figcaption>
         </figure>
+
+        <h3>Who I talked to</h3>
+        <p>The SMEs I interviewed spanned data integrity, retail operations, e-commerce fulfillment, and digital/product teams — the full width of people whose work touches item data before it ever reaches a shelf.</p>
+
+        <div class="role-groups">
+          <div class="role-group">
+            <h4>Corp Data Integrity (Dint)</h4>
+            <div class="role-pills">
+              <span class="role-pill">Data Integrity Center Operations Mgr</span>
+              <span class="role-pill">Sr Strategic Data Integrity & Technology Mgr</span>
+              <span class="role-pill">Data Integrity Center Technology Mgr</span>
+              <span class="role-pill">MDM Attribute Manage</span>
+              <span class="role-pill">Sr Item Operations & Control Manager</span>
+              <span class="role-pill">Item Compliance Manager</span>
+            </div>
+          </div>
+          <div class="role-group">
+            <h4>Corp Retail Operations</h4>
+            <div class="role-pills">
+              <span class="role-pill">Reg Ld Pricing</span>
+              <span class="role-pill">Data Quality Sup</span>
+              <span class="role-pill">Director Data Integ</span>
+            </div>
+          </div>
+          <div class="role-group">
+            <h4>Corp Ecommerce</h4>
+            <div class="role-pills">
+              <span class="role-pill">Regional Fulfillment Operations Support Mgr</span>
+              <span class="role-pill">Sr Inventory Control & Ops Support Mgr</span>
+            </div>
+          </div>
+          <div class="role-group">
+            <h4>Digital &amp; Product</h4>
+            <div class="role-pills">
+              <span class="role-pill">Web Content Editor</span>
+              <span class="role-pill">Sr Data Governance Mgr</span>
+              <span class="role-pill">Digital Services Coordinator</span>
+              <span class="role-pill">Digital Item Setup Analyst</span>
+              <span class="role-pill">Digital Process Manager</span>
+              <span class="role-pill">Product Manager &amp; Senior Product Manager – SME</span>
+              <span class="role-pill">Dgtl Mrchndsng Spclst</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -159,7 +219,7 @@
           <figcaption>The full JTBD board for one user group — eight jobs, each broken into situation, motivation, and what success looks like.</figcaption>
         </figure>
 
-        <figure class="figure" style="max-width:320px;">
+        <figure class="figure narrow">
           <img src="../assets/img/kroger/jtbd-card-example.png" alt="A single Jobs To Be Done card, zoomed in, reading: as a FC specialist, when I am new and don't understand how it differs, I want to quickly understand how my work is structured, so that I can confidently start completing tasks without relying on external documents or asking others, by first learning the core workflow." />
           <figcaption>One JTBD card, zoomed in — the format I used across every job: situation, motivation, and what success looks like.</figcaption>
         </figure>
@@ -185,18 +245,16 @@
           </svg>
         </div>
         <h2>Mapping the transition before designing the guide</h2>
-        <p>I diverged again to develop a high-level structure for the onboarding support itself. Two artifacts drove this: a communication-channel diagram, mapping every touchpoint a user has during onboarding, and an experience workflow blueprint, laying out the transition phase by phase — pre-launch, launch day, and post-launch — with the touchpoint, user action, and support action at each step.</p>
+        <p>I diverged again to develop a high-level structure for the onboarding support itself. Two artifacts drove this: a communication-channel diagram, mapping every touchpoint a user has during onboarding, and an experience workflow blueprint, laying out the transition phase by phase — pre-launch, launch day, and post-launch — with the touchpoint, user action, and support action mapped in separate swimlanes at each step.</p>
 
-        <div class="figure-row">
-          <figure class="figure">
-            <img src="../assets/img/kroger/comm-channel-diagram.png" alt="Communication channel diagram mapping every touchpoint a user has during onboarding" />
-            <figcaption>Mapping every channel a user touches during onboarding — a prerequisite for knowing where a guide or the AI assistant actually needs to show up.</figcaption>
-          </figure>
-          <figure class="figure">
-            <img src="../assets/img/kroger/workflow-blueprint.png" alt="Experience workflow blueprint spanning pre-launch, launch day, and post-launch, with phase, touchpoint, user action, and support action swimlanes" />
-            <figcaption>The onboarding experience blueprint — phase, touchpoint, user action, and support action, mapped from pre-launch through post-launch.</figcaption>
-          </figure>
-        </div>
+        <figure class="figure">
+          <img src="../assets/img/kroger/comm-channel-diagram.png" alt="Communication channel diagram mapping every touchpoint a user has during onboarding" />
+          <figcaption>Mapping every channel a user touches during onboarding — a prerequisite for knowing where a guide or the AI assistant actually needs to show up.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/kroger/workflow-blueprint.png" alt="Experience workflow blueprint spanning pre-launch, launch day, and post-launch, with phase, calendar timeline, process steps, touchpoint, user action, support action, and support actor swimlanes" />
+          <figcaption>The onboarding experience blueprint — phase, timeline, touchpoint, user action, support action, and support actor, each its own swimlane from pre-launch through post-launch.</figcaption>
+        </figure>
 
         <p>Once I had a directional structure, I scheduled sessions with each user group to run user-acceptance testing: validating that I'd understood their legacy workflow correctly, and checking whether the proposed support structure actually matched what they needed.</p>
 
@@ -226,47 +284,128 @@
           </svg>
         </div>
         <h2>Shipping the three-layer framework, then iterating</h2>
-        <p>Once the structure was validated, I fleshed it out into the full <strong>three-layer learning support framework</strong>:</p>
-        <ul>
-          <li><strong>A main guide</strong> — the shared mental model every role needs, showing where the platform adds value against the old, error-prone way of working.</li>
-          <li><strong>Role-specific guides</strong> — tailored walkthroughs for each user group, so a merchandiser and a supply-chain analyst aren't taught the platform through the same lens.</li>
-          <li><strong>A role-aware AI onboarding assistant</strong> — an in-platform agent I configured with custom prompts and knowledge context, so users could ask plain-language questions about their own workflows instead of hunting through documentation.</li>
-        </ul>
+        <p>Once the structure was validated, I fleshed it out into the full <strong>three-layer learning support framework</strong> — each layer answering a different question a user actually has, at a different moment in their onboarding.</p>
+
+        <h3>Layer 1 — The Overview Guide</h3>
+        <p>The main guide is built for both current legacy-tool users and brand-new hires, and it's structured around three questions: <em>What is the new platform? How has the experience changed? What are the best practices for working efficiently in it?</em> It covers the core concepts, navigation, and workflows every role needs before anything role-specific.</p>
 
         <figure class="figure">
           <img src="../assets/img/kroger/guide-main.png" alt="Page from the main onboarding guide showing a before/after comparison of a workflow moment, with the platform name redacted." />
           <figcaption>From the main guide — each "moment" pairs the old, error-prone workflow against the new one, in the user's own words.</figcaption>
         </figure>
 
-        <div class="figure-row">
-          <figure class="figure">
+        <p>I designed the guide to be interactive, not a static PDF: a clickable table of contents for jumping straight to the section you need, dark mode for readability, and inline links out to the reference documents each topic is drawn from.</p>
+
+        <div class="figure-row asym">
+          <figure class="figure narrow">
             <img src="../assets/img/kroger/guide-cover.png" alt="Cover page of the onboarding guide" />
-            <figcaption>Main guide cover</figcaption>
+            <figcaption>Guide cover</figcaption>
           </figure>
           <figure class="figure">
-            <img src="../assets/img/kroger/guide-user-specific.png" alt="Table of contents for a role-specific onboarding guide" />
-            <figcaption>One of the role-specific guide tracks</figcaption>
+            <img src="../assets/img/kroger/guide-toc.png" alt="Interactive, clickable table of contents for the main onboarding guide" />
+            <figcaption>Clickable table of contents — every entry jumps straight to that section.</figcaption>
           </figure>
         </div>
 
-        <p>I had users test directly with the guide and the chatbot, then iterated the content and the assistant's responses based on their feedback.</p>
+        <figure class="figure">
+          <img src="../assets/img/kroger/guide-dark-mode.png" alt="The same guide page rendered in dark mode for readability" />
+          <figcaption>Dark mode — the same content, built to be comfortable to read during a long onboarding session.</figcaption>
+        </figure>
+
+        <h3>Layer 2 — Role-Specific Guides</h3>
+        <p>The main guide gives everyone the same mental model; the role-specific guides answer a narrower, more personal question: <em>If I were a new hire today, how would I actually perform my job in the new system — and how do I do it most efficiently?</em> Each of the four completed tracks walks through that role's real workflows, not a generic tour of the platform.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/guide-user-specific.png" alt="Table of contents for a role-specific onboarding guide" />
+          <figcaption>One of the role-specific guide tracks — workflows written from that role's own tasks, not the platform's feature list.</figcaption>
+        </figure>
+
+        <h3>Layer 3 — The Custom AI Assistant</h3>
+        <p>Guides solve the "I need to learn this" problem. They don't solve the "I need an answer right now" problem. Users onboarding onto a new system are still busy doing their jobs — they don't want to search through a document to find one field's validation rule. The assistant exists to answer the question <em>What's the fastest way to get help?</em>, giving on-demand guidance, troubleshooting, and direct access to reference documentation, without anyone having to leave their workflow.</p>
+
+        <div class="decision-box">
+          <h4>Choosing the platform: Copilot Studio vs. a custom-built agent</h4>
+          <p style="margin-bottom:10px;">I first explored building the assistant in Microsoft Copilot Studio. In testing, I ran into blocking issues — a knowledge source blocked by data policy, and conflicting data-policy groups preventing publication — that made it a real feasibility and data-security risk for handling internal item data.</p>
+          <figure class="figure" style="margin:14px 0;">
+            <img src="../assets/img/kroger/copilot-studio-blockers.png" alt="Copilot Studio agent status panel showing two blocking errors: a knowledge source blocked by data policy, and items blocked by conflicting data policy groups" />
+            <figcaption>Copilot Studio blocked publication over data-policy conflicts — the feasibility and data-security risk that ruled it out.</figcaption>
+          </figure>
+          <p style="margin-bottom:0;">I opted instead for Kroger's own internal custom-agent platform. It sidestepped the data-policy conflicts, kept everything inside Kroger's existing security boundary, and was the more cost-effective path to a production assistant.</p>
+        </div>
 
         <figure class="figure">
           <img src="../assets/img/kroger/custom-agent.png" alt="Configuration screen for the custom AI onboarding assistant, showing system prompt and user instructions fields, with the platform name redacted." />
-          <figcaption>Configuring the onboarding assistant — system prompt, user-facing instructions, and knowledge context.</figcaption>
+          <figcaption>Configuring the onboarding assistant on Kroger's internal custom-agent platform — system prompt, user-facing instructions, and knowledge context.</figcaption>
         </figure>
+
+        <h4>Designing the system prompt</h4>
+        <p>The assistant is only as good as the behavior I write into it. I structured the system prompt around context, users, and core capabilities (onboarding support, workflow guidance, reference support, troubleshooting), then went deep on conversation flow, tone, and — critically — where the assistant should <em>stop</em>.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/system-prompt-toc.png" alt="Table of contents for the onboarding assistant's system prompt, covering context, users, core capabilities, conversation flow, output guidelines including tone and style, cross-cultural sensitivity, guardrails and scope, and offramps" />
+          <figcaption>The system prompt's own table of contents — tone &amp; style, guardrails, and offramps are first-class sections, not an afterthought.</figcaption>
+        </figure>
+
+        <p><strong>Tone and capability.</strong> The output guidelines define the assistant's voice and style directly — how formal to be, how to phrase corrections, how to stay consistent across a long conversation — plus a dedicated cross-cultural sensitivity section, since the assistant supports a workforce that isn't culturally uniform.</p>
+
+        <p><strong>Off-ramps.</strong> I designed explicit rules for when the assistant should redirect rather than answer: out-of-scope Kroger systems, features not documented in the training guide, bug reports, and access disputes each get their own acknowledge → redirect → engage pattern, with example phrasing so the tone stays consistent even when the assistant is saying "I can't help with that."</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/system-prompt-offramps.png" alt="System prompt section on offramps, showing scope enforcement, out-of-scope topic handling, and hallucination prevention rules with example redirect phrasing" />
+          <figcaption>Offramps — scope enforcement and out-of-scope handling, written with example phrasing so the assistant redirects consistently instead of guessing.</figcaption>
+        </figure>
+
+        <p><strong>Image handling.</strong> Users can upload screenshots of the platform to ask questions, so I wrote explicit rules for how the assistant should interpret them: describe what it sees factually, map it to the relevant guide, read validation states from visual cues like field color and icon — and never guess at content it can't clearly read.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/system-prompt-image-handling.png" alt="System prompt section on image and screenshot handling, listing what the assistant should and should not do when a user uploads a screenshot" />
+          <figcaption>Image-handling rules — what to do, what not to do, and how to ask for clarification when a screenshot can't be interpreted confidently.</figcaption>
+        </figure>
+
         <figure class="figure">
           <img src="../assets/img/kroger/workflow-before.png" alt="The onboarding assistant answering a specialist's question about an item's stickering status" />
           <figcaption>The assistant in use — answering a role-specific question in plain language instead of pointing to documentation.</figcaption>
         </figure>
 
-        <p>I presented the vision and the implementation roadmap to more than 50 cross-functional stakeholders across product, engineering, and business — and the framework itself is now the baseline the team will use to onboard the remaining four user groups by the end of the fiscal year.</p>
+        <p>I had users test directly with the guide and the chatbot, then iterated the content and the assistant's responses based on their feedback. I also presented the vision and the implementation roadmap to more than 50 cross-functional stakeholders across product, engineering, and business — and the framework itself is now the baseline the team will use to onboard the remaining four user groups by the end of the fiscal year.</p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="colhead">
+        <span class="eyebrow">Maintenance</span>
+        <h2>A living project, not a one-time deliverable</h2>
+      </div>
+      <div class="content">
+        <p>An onboarding framework that only I can update isn't actually done. Before the internship ended, I built the maintenance structure so the internal team can keep extending it — to the remaining four user groups, and beyond — without needing me in the room.</p>
+
+        <p>I documented the assistant itself on Confluence: what it does, how to access it, and how to maintain it through the Edit Studio, so any team member can pick up ownership.</p>
+
+        <figure class="figure">
+          <img src="../assets/img/kroger/maintenance-confluence-agent.png" alt="Internal Confluence documentation page titled Custom AI Assistant, covering overview, what the assistant does, accessing the custom agent, and maintaining the custom agent" />
+          <figcaption>The internal Confluence page for the assistant — overview, capabilities, access steps, and maintenance instructions for the team.</figcaption>
+        </figure>
+
+        <p>Keeping the assistant's knowledge base current means the team needs a repeatable way to add new reference material. I documented a naming convention — <code>[Scope]_[Content]_[UploadDate]</code> — so every context document is traceable to the user group and topic it covers, and paired it with a custom Claude Code skill that converts source documents (Excel, PDF, Word, PowerPoint, images) into the clean Markdown format the assistant's knowledge base actually needs.</p>
+
+        <div class="figure-row asym">
+          <figure class="figure">
+            <img src="../assets/img/kroger/maintenance-confluence-naming.png" alt="Internal Confluence documentation page titled Context Documents, explaining the markdown conversion requirement and the naming convention format Scope underscore Content underscore UploadDate" />
+            <figcaption>Context-document naming convention and the markdown-conversion requirement, documented for the team.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="../assets/img/kroger/maintenance-md-skill.png" alt="The doc-to-markdown-converter Claude Code skill file, defining strict behaviors for converting source documents into markdown" />
+            <figcaption>The reusable skill itself — strict, documented behaviors so any team member gets the same conversion result.</figcaption>
+          </figure>
+        </div>
+
+        <p>This structure is what makes the "4 of 8 user groups" number a starting point rather than a ceiling: the team has the process, the naming system, and the tooling to keep going.</p>
       </div>
     </div>
 
     <div class="reflect-box">
       <span class="eyebrow">Reflection</span>
-      <p style="margin-bottom:0;">This project is the clearest version of my journey I can point to. The same instinct that made me want to sit with people until I understood their situation — from anthropology — showed up as contextual inquiry and JTBD synthesis across 20+ SMEs. And the instinct to make something an audience could feel — from filmmaking — showed up in a guide and an assistant designed around each role's actual moment of confusion, not a generic tutorial. The Double Diamond just gave that instinct a shape I could repeat, group by group.</p>
+      <p style="margin-bottom:0;">This project is the clearest version of my journey I can point to. The same instinct that made me want to sit with people until I understood their situation — from anthropology — showed up as contextual inquiry and JTBD synthesis across 20+ SMEs and constant cross-functional alignment with PMs and designers. And the instinct to make something an audience could feel — from filmmaking — showed up in a guide and an assistant designed around each role's actual moment of confusion, not a generic tutorial. Building the maintenance structure at the end was its own kind of storytelling discipline: making sure the story keeps being told after I leave the room.</p>
     </div>
 
   </div>
