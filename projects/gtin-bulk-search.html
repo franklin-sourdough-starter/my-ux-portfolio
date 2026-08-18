@@ -27,85 +27,79 @@
   </div>
 </nav>
 
-<header class="case-hero">
-  <div class="wrap" style="max-width: 820px;">
-    <div class="tags"><span class="tag academic">Industry · Internship</span></div>
-    <h1>Designing Bulk GTIN Search and Task Creation for Kroger's Item Platform</h1>
-    <p class="lede">A design-focused project on the same platform — building a bulk search flow and inline task creation, so a specialist checking hundreds of items at once could act on what they found without leaving the results page.</p>
+<div class="wrap case-layout">
+  <aside class="case-sidebar">
+    <a href="../projects.html" class="back-link">← Back to Work</a>
+    <nav class="case-toc">
+      <a href="#context" class="active"><span class="dot"></span>Context</a>
+      <a href="#response"><span class="dot"></span>Design Response</a>
+      <a href="#impact"><span class="dot"></span>Impact</a>
+      <a href="#reflection"><span class="dot"></span>Reflection</a>
+    </nav>
+  </aside>
 
-    <div class="case-meta">
-      <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
-      <div><div class="label">Organization</div><div class="value">The Kroger Co.</div></div>
-      <div><div class="label">Duration</div><div class="value">May 2026 – Present</div></div>
-      <div><div class="label">Methods</div><div class="value">Workflow mapping, UI design, prototyping</div></div>
+  <main class="case-main">
+    <header class="case-hero-block">
+      <div class="tags"><span class="tag academic">Design</span></div>
+      <h1>Designing Bulk GTIN Search and Task Creation for Kroger's Item Platform</h1>
+      <p class="lede">A design-focused project on the same platform: building a bulk search flow and inline task creation, so a specialist checking hundreds of items at once could act on what they found without leaving the results page.</p>
+
+      <div class="case-meta">
+        <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
+        <div><div class="label">Organization</div><div class="value">The Kroger Co.</div></div>
+        <div><div class="label">Duration</div><div class="value">May 2026 – Present</div></div>
+        <div><div class="label">Methods</div><div class="value">Workflow mapping, UI design, prototyping</div></div>
+      </div>
+    </header>
+
+    <section id="context">
+      <span class="eyebrow">Context</span>
+      <h2>Checking hundreds of items, one at a time</h2>
+      <p style="margin-bottom:0;">Specialists working in Kroger's item-management platform often need to check the status of many items at once, hundreds of GTINs at a time, before acting on them. The existing search only supported looking up one item at a time, so a routine bulk check meant repeating the same lookup over and over.</p>
+    </section>
+
+    <section id="response">
+      <span class="eyebrow">Design Response</span>
+      <h2>A single search-and-act flow</h2>
+      <p>I designed a bulk search input that accepts a full or partial GTIN, PLU, or keyword, pasted in as a list, hundreds at a time, and returns matching records in one pass instead of one search per item.</p>
+
+      <figure class="figure">
+        <img src="../assets/img/kroger/final-design-1.png" alt="Bulk search screen accepting a pasted list of GTINs, with a counter reading 499 GTINs entered" />
+        <figcaption>Bulk search: a specialist can paste in hundreds of GTINs, PLUs, or keywords at once.</figcaption>
+      </figure>
+
+      <p>The second piece closed the loop: from the search results page, a specialist can select item(s) and create a task directly, instead of leaving the results to start a separate task-creation flow and losing their place in the list.</p>
+
+      <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/kroger/results-task-creation.png" alt="Search results page with selectable items and a task-creation confirmation toast" />
+        <figcaption>Task creation from the results page: select item(s), create a task, no context switch.</figcaption>
+      </figure>
+    </section>
+
+    <section id="impact">
+      <span class="eyebrow">Impact</span>
+      <h2>Where this stands</h2>
+      <p style="margin-bottom:0;">The combined flow collapses what used to be a repeated, one-item-at-a-time lookup followed by a separate task-creation step into a single bulk search-and-act workflow: the everyday case for specialists managing large batches of items.</p>
+    </section>
+
+    <section id="reflection" style="border-bottom:none; padding-bottom:8px;">
+      <div class="reflect-box">
+        <span class="eyebrow">Reflection</span>
+        <p style="margin-bottom:0;">This project sits right next to the onboarding work: one taught people the platform, the other made the platform itself faster to use. Together they're the two halves of what "onboarding" actually means to me: understanding where people get stuck, and then removing the friction rather than just explaining around it.</p>
+      </div>
+    </section>
+
+    <div class="case-nav">
+      <a href="kroger-onboarding.html">
+        <span class="dir">← Previous project</span>
+        <span class="title">Kroger Enterprise Onboarding</span>
+      </a>
+      <a href="wlc-summer-learning.html" class="next">
+        <span class="dir">Next project →</span>
+        <span class="title">Exploring Summer in WLC Schools</span>
+      </a>
     </div>
-  </div>
-</header>
-
-<section class="case-body">
-  <div class="wrap" style="max-width: 900px;">
-
-    <div class="col">
-      <div class="colhead">
-        <span class="eyebrow">Context</span>
-        <h2>Checking hundreds of items, one at a time</h2>
-      </div>
-      <div class="content">
-        <p>Specialists working in Kroger's item-management platform often need to check the status of many items at once — hundreds of GTINs at a time — before acting on them. The existing search only supported looking up one item at a time, so a routine bulk check meant repeating the same lookup over and over.</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="colhead">
-        <span class="eyebrow">Design Response</span>
-        <h2>A single search-and-act flow</h2>
-      </div>
-      <div class="content">
-        <p>I designed a bulk search input that accepts a full or partial GTIN, PLU, or keyword — pasted in as a list, hundreds at a time — and returns matching records in one pass instead of one search per item.</p>
-
-        <figure class="figure">
-          <img src="../assets/img/kroger/final-design-1.png" alt="Bulk search screen accepting a pasted list of GTINs, with a counter reading 499 GTINs entered" />
-          <figcaption>Bulk search — a specialist can paste in hundreds of GTINs, PLUs, or keywords at once.</figcaption>
-        </figure>
-
-        <p>The second piece closed the loop: from the search results page, a specialist can select item(s) and create a task directly, instead of leaving the results to start a separate task-creation flow and losing their place in the list.</p>
-
-        <figure class="figure">
-          <img src="../assets/img/kroger/results-task-creation.png" alt="Search results page with selectable items and a task-creation confirmation toast" />
-          <figcaption>Task creation from the results page — select item(s), create a task, no context switch.</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="colhead">
-        <span class="eyebrow">Impact</span>
-        <h2>Where this stands</h2>
-      </div>
-      <div class="content">
-        <p>The combined flow collapses what used to be a repeated, one-item-at-a-time lookup followed by a separate task-creation step into a single bulk search-and-act workflow — the everyday case for specialists managing large batches of items.</p>
-      </div>
-    </div>
-
-    <div class="reflect-box">
-      <span class="eyebrow">Reflection</span>
-      <p style="margin-bottom:0;">This project sits right next to the onboarding work: one taught people the platform, the other made the platform itself faster to use. Together they're the two halves of what "onboarding" actually means to me — understanding where people get stuck, and then removing the friction rather than just explaining around it.</p>
-    </div>
-
-  </div>
-</section>
-
-<div class="wrap">
-  <div class="case-nav">
-    <a href="kroger-onboarding.html">
-      <span class="dir">← Previous project</span>
-      <span class="title">Kroger Enterprise Onboarding</span>
-    </a>
-    <a href="wlc-summer-learning.html" class="next">
-      <span class="dir">Next project →</span>
-      <span class="title">Exploring Summer in WLC Schools</span>
-    </a>
-  </div>
+  </main>
 </div>
 
 <footer>
@@ -123,5 +117,6 @@
 </footer>
 
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/case-toc.js"></script>
 </body>
 </html>
