@@ -31,9 +31,11 @@
   <aside class="case-sidebar">
     <a href="../projects.html" class="back-link">← Back to Work</a>
     <nav class="case-toc">
-      <a href="#context" class="active"><span class="dot"></span>Context</a>
-      <a href="#response"><span class="dot"></span>Design Response</a>
-      <a href="#impact"><span class="dot"></span>Impact</a>
+      <a href="#overview" class="active"><span class="dot"></span>Overview</a>
+      <a href="#context"><span class="dot"></span>Context</a>
+      <a href="#research"><span class="dot"></span>Research</a>
+      <a href="#response"><span class="dot"></span>Bulk Search</a>
+      <a href="#task-creation"><span class="dot"></span>Task Creation</a>
       <a href="#reflection"><span class="dot"></span>Reflection</a>
     </nav>
   </aside>
@@ -41,51 +43,229 @@
   <main class="case-main">
     <header class="case-hero-block">
       <div class="tags"><span class="tag academic">Design</span></div>
-      <h1>Designing Bulk GTIN Search and Task Creation for Kroger's Item Platform</h1>
-      <p class="lede">A design-focused project on the same platform: building a bulk search flow and inline task creation, so a specialist checking hundreds of items at once could act on what they found without leaving the results page.</p>
+      <h1>Designing Bulk GTIN Search and Task Creation for Kroger's Item Management Platform</h1>
+      <p class="lede">A design-focused project on the same platform: building a bulk search flow and inline task creation, so a Signage Specialist checking hundreds of items at once could act on what they found without leaving the results page.</p>
 
       <div class="case-meta">
         <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
         <div><div class="label">Organization</div><div class="value">The Kroger Co.</div></div>
-        <div><div class="label">Duration</div><div class="value">May 2026 – Present</div></div>
-        <div><div class="label">Methods</div><div class="value">Workflow mapping, UI design, prototyping</div></div>
+        <div><div class="label">Duration</div><div class="value">May – August 2026</div></div>
+        <div><div class="label">Methods</div><div class="value">SME &amp; adjacent-team interviews, workflow mapping, UI design, prototyping</div></div>
       </div>
     </header>
 
+    <section id="overview" style="padding:30px 0 48px;">
+      <span class="eyebrow">Overview</span>
+      <h2 style="margin:8px 0 14px;">What I did</h2>
+      <p class="lede" style="max-width:720px;">I designed the bulk GTIN search and inline task-creation flow for Kroger's item-management platform.</p>
+
+      <div class="impact-grid cols-2" style="margin-bottom:0;">
+        <div class="impact-card">
+          <h4>A New Capability</h4>
+          <p>Bulk GTIN search didn't exist on the platform. I designed it from scratch, built entirely within Kroger's existing design system so it launched feeling native.</p>
+        </div>
+        <div class="impact-card">
+          <h4>2 Input Patterns</h4>
+          <p>Provided two candidate bulk-entry directions, both built to production-ready fidelity, so the team could choose based on development feasibility.</p>
+        </div>
+        <div class="impact-card">
+          <h4>One Connected Flow</h4>
+          <p>I designed the end-to-end flow from bulk search to task creation, so specialists can search, select items, and create tasks all on one page instead of switching to a separate flow.</p>
+        </div>
+        <div class="impact-card">
+          <h4>Built to Generalize</h4>
+          <p>Designed for Signage Specialists first, then generalized for any user group that needs to reconcile a list of items.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="context">
       <span class="eyebrow">Context</span>
-      <h2>Checking hundreds of items, one at a time</h2>
-      <p style="margin-bottom:0;">Specialists working in Kroger's item-management platform often need to check the status of many items at once, hundreds of GTINs at a time, before acting on them. The existing search only supported looking up one item at a time, so a routine bulk check meant repeating the same lookup over and over.</p>
+      <h2>A high-priority gap in the new platform</h2>
+      <p>Signage Specialists need to check the status of many items at once, hundreds of GTINs at a time. The legacy systems technically let someone work through a list like that, but the interfaces were dense and unforgiving, and doing it that way was slow and mentally exhausting.</p>
+      <p>The new, modernized item-management platform hadn't built any equivalent yet: bulk GTIN search is not part of the MVPmost specialists rarely needed. As specialists migrated onto it, that gap became one of the highest-priority features on the roadmap for the upcoming quarter.</p>
+      <p style="margin-bottom:0;">The capability was designed for Signage Specialists first, but the underlying need isn't specific to that role: any user group that has to reconcile a list of items against the platform runs into the same ceiling, so this was designed to generalize beyond Signage.</p>
+
+      <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/kroger/modernized-single-search.png" alt="The modernized platform's search screen, showing a single search bar that only accepts one full or partial GTIN, PLU, or keyword at a time" />
+        <figcaption>The modernized platform as it stood: one search bar, one entry at a time, no bulk equivalent.</figcaption>
+      </figure>
+    </section>
+
+    <section id="research">
+      <span class="eyebrow">Research</span>
+      <h2>Learning how the work actually gets done</h2>
+      <p>Before designing anything, I talked to SMEs, the user research team, and product designers who'd worked adjacent to this problem before, to understand what already existed and where the actual gaps were.</p>
+
+      <h3>Current workflow: legacy systems that wear people down</h3>
+      <p>Sitting with the current workflow confirmed what research and SMEs had already flagged: the legacy systems specialists still relied on, from mainframe terminal screens to the platform's underlying product-information-management system, were dense and unforgiving, and made even routine, everyday checks feel slow and mentally taxing.</p>
+
+      <div class="figure-row three" style="margin-bottom:0;">
+        <figure class="figure">
+          <img src="../assets/img/kroger/legacy-terminal-browse.jpg" alt="Legacy mainframe terminal screen used to look up case and item data, dense green text on a black background" />
+          <figcaption>A legacy terminal screen used to look up item data.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/kroger/legacy-terminal-setup.jpg" alt="Another legacy mainframe terminal screen showing detailed case and shipping setup fields for a single item" />
+          <figcaption>Another legacy terminal view, dense with fields that are hard to read.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/kroger/product360-item-lookup.png" alt="The platform's underlying product-information-management system, showing a single item's details retrieved by one GTIN at a time" />
+          <figcaption>The current main item management system. Workflows are manual and fragmented. </figcaption>
+        </figure>
+      </div>
+
+      <h3>Checking with adjacent teams</h3>
+      <p style="margin-bottom:0;">I also reached out to product designers on adjacent teams to ask whether bulk GTIN search had already been designed for another product. There was no modern pattern to borrow from anywhere, internally or on an adjacent team.</p>
     </section>
 
     <section id="response">
       <span class="eyebrow">Design Response</span>
-      <h2>A single search-and-act flow</h2>
-      <p>I designed a bulk search input that accepts a full or partial GTIN, PLU, or keyword, pasted in as a list, hundreds at a time, and returns matching records in one pass instead of one search per item.</p>
+      <h2>Bulk Search</h2>
+      <p>Since there was no existing bulk search pattern to build on, I leveraged <b>Figma Make</b> and <b>Kroger's design system</b> to rapidly prototype concepts. I then facilitated daily design reviews with senior designers to align on the best direction and technical feasibility. That process converged on two candidate solutions for how a specialist would actually enter a bulk list, each taken to a build-ready level of detail, so the call on which one shipped could come down to timeline and engineering feasibility rather than design preference alone.</p>
 
       <figure class="figure">
-        <img src="../assets/img/kroger/final-design-1.png" alt="Bulk search screen accepting a pasted list of GTINs, with a counter reading 499 GTINs entered" />
-        <figcaption>Bulk search: a specialist can paste in hundreds of GTINs, PLUs, or keywords at once.</figcaption>
+        <img src="../assets/img/kroger/gtin-figma-overview.png" alt="Figma Make exploration board overview: bulk search variants, invalid-GTIN messaging, task-creation confirmation, sorted idea iterations, and reference material, with design-review comment threads throughout" />
+        <figcaption>The full Figma exploration board: variants, iterations, and comment threads.</figcaption>
       </figure>
 
-      <p>The second piece closed the loop: from the search results page, a specialist can select item(s) and create a task directly, instead of leaving the results to start a separate task-creation flow and losing their place in the list.</p>
+      <h3>Two directions</h3>
+      <p>The first treated the input as a plain scrollable list: paste in hundreds of GTINs and scroll through them as a single block, close to how specialists already worked with pasted spreadsheet lists. The second split the search bar from the entered GTINs, turning each one into its own removable chip, so editing the list, spotting an entry, and removing it doesn't mean scrolling and re-editing a shared block of text. I compared both across the same set of states, from an empty input through a full, invalid list.</p>
+
+      <div class="compare-matrix">
+        <div class="compare-head">
+          <div>Option 1: Plain Text</div>
+          <div>Option 2: Removable Chip</div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Entering GTINs</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/scrollable-list-two-entries.png" alt="Scrollable list input showing two GTINs entered as plain text lines in a single field" />
+              <figcaption>GTINs entered as plain text lines in a single field.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/chip-design-two-entries.png" alt="Removable chip design showing two GTINs entered as individual removable chips" />
+              <figcaption>Each GTIN becomes its own removable chip.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Max entries</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/scrollable-list-max-entries.png" alt="Scrollable list at near-max capacity, with a counter reading 499 GTINs entered" />
+              <figcaption>499 GTINs entered, no errors.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/chip-design-max-entries.png" alt="Removable chip design at near-max capacity, 499 GTINs entered as individual chips" />
+              <figcaption>499 GTINs entered, one per chip.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Max entries, field focused</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/scrollable-list-max-entries-focused.png" alt="Scrollable list at near-max capacity with the input field focused, showing a blue focus outline around the list" />
+              <figcaption>Focus state highlights the full scrollable list.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/chip-design-max-entries-focused.png" alt="Removable chip design at near-max capacity with the input field focused, a new GTIN being typed above the existing chips" />
+              <figcaption>Focus state keeps the entry field separate from the scrollable chip list.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Limit reached</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/scrollable-list-limit-warning.png" alt="Scrollable list showing a warning banner: Limit of 500 items reached. Remove existing GTINs to add new ones." />
+              <figcaption>Warning banner appears once the 500-item limit is reached.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/chip-design-limit-warning.png" alt="Removable chip design showing the same limit-reached warning banner above 500 chips" />
+              <figcaption>Same warning, shown above the full scrollable chip list.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Error on exceeding limit</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/scrollable-list-limit-error.png" alt="Scrollable list with a red error outline and red error text after the user tries to add another GTIN past the 500 limit" />
+              <figcaption>Field and message switch to red when the user tries to add past the limit.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/chip-design-limit-error.png" alt="Chip design with a red error outline and red error text after the user tries to add another GTIN past the 500 limit" />
+              <figcaption>Same error treatment on the chip variant.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p>Neither direction was designed as the fallback. The scrollable list is faster to build and closer to how specialists already work with pasted lists day to day; the chip pattern costs more engineering effort but separates the search bar from what's already been entered, making it easier to review and edit the list than scrolling through one shared block of text. Keeping both at production-ready fidelity meant product and engineering could weigh that tradeoff against the quarter's roadmap and pick the one that fit, instead of the decision resting on design preference alone.</p>
 
       <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/kroger/invalid-gtins-modal.png" alt="Invalid GTINs modal listing 20 invalid entries with their GTIN Type and Issue (Not found, Invalid GTIN), with a Copy all invalid GTINs to clipboard link and Cancel/Confirm actions" />
+        <figcaption>When a search returns invalid GTINs, a modal lists each one with why it failed, so a specialist can copy the list, fix it, and re-search instead of guessing which entries didn't match.</figcaption>
+      </figure>
+
+    </section>
+
+    <section id="task-creation">
+      <span class="eyebrow">Design Response</span>
+      <h2>Task Creation</h2>
+      <p>The second piece closed the loop: from the search results page, a specialist can select item(s) and create a task directly, instead of leaving the results to start a separate task-creation flow and losing their place in the list. Task creation on this page isn't owned by one team, though: the top toolbar belongs to the team that owns task management across the platform, while the results table and its bulk actions belong to the team that owns the item-record edit experience. So I designed two options, one aligned with each team's existing pattern, rather than forcing either one to break from what specialists already know from other parts of the platform.</p>
+
+      <div class="compare-matrix">
+        <div class="compare-head">
+          <div>Option 1: Task Management Aligned</div>
+          <div>Option 2: Item Record Edit Aligned</div>
+        </div>
+
+        <div class="compare-row">
+          <span class="compare-row-label">Creating a task</span>
+          <div class="compare-row-imgs">
+            <figure>
+              <img src="../assets/img/kroger/task-creation-button-topbar.png" alt="Results page with a Create Task button in the top toolbar next to Download, matching the platform's existing task-management pattern" />
+              <figcaption>A Create Task button sits in the top toolbar, consistent with how tasks are created elsewhere on the platform.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/img/kroger/task-creation-action-bar.png" alt="Results page with a persistent bottom action bar showing the selected item count and a Create Tasks for Selected button, matching the item-record edit experience" />
+              <figcaption>A selection-aware action bar appears at the bottom, consistent with the item-record edit experience's bulk actions.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p>Both options do the same job: select item(s) from the results and create a task without leaving the page. Which one ships comes down to which team ends up owning this page long-term, since either choice keeps the flow consistent with a pattern specialists already recognize from elsewhere in the platform.</p>
+
+      <figure class="figure">
+        <img src="../assets/img/kroger/results-default-selection.png" alt="Default search results page with the Exact matches filter checked and Partial matches unchecked, showing 70 of 500 items selected for task creation" />
+        <figcaption>Exact GTIN matches are auto-selected for task creation, partial matches are left unselected, and a specialist can manually select any partial match they still want to include. Specialists can also filter and sort the results to fit their needs.</figcaption>
+      </figure>
+
+      <figure class="figure">
         <img src="../assets/img/kroger/results-task-creation.png" alt="Search results page with selectable items and a task-creation confirmation toast" />
-        <figcaption>Task creation from the results page: select item(s), create a task, no context switch.</figcaption>
+        <figcaption>Tasks Creation in Progress toast message.</figcaption>
+      </figure>
+
+      <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/kroger/tasks-created-confirmation.png" alt="Search page back at its empty state with a green Tasks Created toast confirming 70 signage tasks successfully created, with a link to view them in the task list" />
+        <figcaption>End of the happy path: a system-wide toast confirms the tasks were created, so a specialist doesn't have to stay on the search page waiting to find out.</figcaption>
       </figure>
     </section>
 
-    <section id="impact">
-      <span class="eyebrow">Impact</span>
-      <h2>Where this stands</h2>
-      <p style="margin-bottom:0;">The combined flow collapses what used to be a repeated, one-item-at-a-time lookup followed by a separate task-creation step into a single bulk search-and-act workflow: the everyday case for specialists managing large batches of items.</p>
-    </section>
-
-    <section id="reflection" style="border-bottom:none; padding-bottom:8px;">
+    <section id="reflection" style="border-bottom:none; padding-bottom:38px;">
       <div class="reflect-box">
         <span class="eyebrow">Reflection</span>
-        <p style="margin-bottom:0;">This project sits right next to the onboarding work: one taught people the platform, the other made the platform itself faster to use. Together they're the two halves of what "onboarding" actually means to me: understanding where people get stuck, and then removing the friction rather than just explaining around it.</p>
+        <p style="margin-bottom:0;">This project sits right next to the onboarding work: one taught people the platform, the other made the platform itself faster to use. Together they're the two halves of what "human-centered design" actually means to me: understanding where people get stuck, and then removing the friction based on feasibility.</p>
       </div>
     </section>
 

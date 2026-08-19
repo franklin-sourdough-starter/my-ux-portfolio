@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Building Stronger Foundations — Franklin Cheng</title>
-<meta name="description" content="A self-initiated service design project rebuilding intern recruitment and onboarding at the International Rescue Committee." />
+<title>Intern Recruitment &amp; Onboarding Research — Franklin Cheng</title>
+<meta name="description" content="A self-initiated UX research project uncovering why recruitment and onboarding broke down for interns and volunteers at the International Rescue Committee." />
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,10 +31,14 @@
   <aside class="case-sidebar">
     <a href="../projects.html" class="back-link">← Back to Work</a>
     <nav class="case-toc">
-      <a href="#context" class="active"><span class="dot"></span>Context</a>
-      <a href="#approach"><span class="dot"></span>My Role &amp; Approach</a>
+      <a href="#background" class="active"><span class="dot"></span>IRC Background</a>
+      <a href="#context"><span class="dot"></span>Project Context</a>
+      <a href="#objectives"><span class="dot"></span>Research Objectives</a>
+      <a href="#research"><span class="dot"></span>Research Methods</a>
       <a href="#findings"><span class="dot"></span>Key Findings</a>
-      <a href="#outcome"><span class="dot"></span>Outcome &amp; Impact</a>
+      <a href="#personas"><span class="dot"></span>Personas</a>
+      <a href="#mapping"><span class="dot"></span>Process Mapping</a>
+      <a href="#recommendations"><span class="dot"></span>Recommendations</a>
       <a href="#reflection"><span class="dot"></span>Reflection</a>
     </nav>
   </aside>
@@ -42,58 +46,219 @@
   <main class="case-main">
     <header class="case-hero-block">
       <div class="tags"><span class="tag industry">Research</span></div>
-      <h1>Building Stronger Foundations: Redesigning Intern Recruitment &amp; Onboarding</h1>
-      <p class="lede">A project nobody asked me to do. I noticed colleagues struggling with a broken onboarding process, and used a diary study and service design to fix it from the inside.</p>
+      <h1>Building Stronger Foundations: Research-Driven Insights into Intern Recruitment Strategy in Non-Profits</h1>
+      <p class="lede">A problem nobody assigned me. Interns, supervisors, and Community Relations staff were all talking past each other during recruitment and onboarding, so I ran a self-initiated research project to find out where the system was actually breaking.</p>
 
       <div class="case-meta">
-        <div><div class="label">Role</div><div class="value">Self-initiated Service Designer</div></div>
+        <div><div class="label">Role</div><div class="value">Community Relations Intern Lead → Housing Specialist</div></div>
         <div><div class="label">Organization</div><div class="value">International Rescue Committee (NY/NJ)</div></div>
-        <div><div class="label">Duration</div><div class="value">Fall 2023</div></div>
-        <div><div class="label">Methods</div><div class="value">Two-part diary study, stakeholder analysis, journey mapping, personas</div></div>
+        <div><div class="label">Duration</div><div class="value">March – June 2024 (3 months)</div></div>
+        <div><div class="label">Methods</div><div class="value">Semi-structured interviews, focus groups, field study, stakeholder &amp; journey mapping, personas</div></div>
+      </div>
+
+      <div class="impact-grid cols-3" style="margin-top:32px; margin-bottom:0;">
+        <div class="impact-card">
+          <h4>Challenge</h4>
+          <p>Following organizational cutbacks, the Community Relations team entered a growth phase that sharply increased demand for interns and volunteers, but recruitment systems, procedures, and staffing hadn't scaled to match.</p>
+        </div>
+        <div class="impact-card">
+          <h4>Finding</h4>
+          <p>The recruitment and onboarding steps mostly existed; what was missing was ownership of the handoffs between them, and between what supervisors expected and what interns were actually told.</p>
+        </div>
+        <div class="impact-card">
+          <h4>Impact</h4>
+          <p>Delivered three priority recommendations to Community Relations leadership. Research contributed to 25% increase in new hires for the Summer 2024 intern recruitment cycle.</p>
+        </div>
       </div>
     </header>
 
-    <section id="context">
-      <span class="eyebrow">Context</span>
-      <h2>A problem I found, not one I was assigned</h2>
-      <p style="margin-bottom:0;">While working as Community Relations Lead at the International Rescue Committee's NY/NJ office, I kept noticing the same friction surface in different conversations: managers and interns talking past each other during recruitment and onboarding, with no one person owning the process end to end. Nothing in my job description asked me to fix this. But it was exactly the kind of "insight I couldn't just leave on the table" that pulled me toward design in the first place, so I initiated the project myself.</p>
+    <section id="background">
+      <span class="eyebrow">IRC Background</span>
+      <h2>A global humanitarian organization scaling its NY &amp; NJ offices</h2>
+      <p>The International Rescue Committee operates as a global humanitarian organization headquartered in New York, providing critical support to vulnerable populations worldwide. The New York Resettlement, Asylum, and Integration (RAI) office represents one of the organization's largest domestic operations, delivering immediate assistance, including food, housing, and medical support, to refugees and asylees upon arrival.</p>
+
+      <h3>Key stakeholders</h3>
+      <div class="role-groups" style="margin-bottom:0;">
+        <div class="role-group">
+          <h4>Recruit &amp; place</h4>
+          <div class="role-pills">
+            <span class="role-pill">Interns (internal, 3+ month commitment)</span>
+            <span class="role-pill">Volunteers (external, short-term)</span>
+            <span class="role-pill">Community Relations Team</span>
+          </div>
+        </div>
+        <div class="role-group">
+          <h4>Rely on placements</h4>
+          <div class="role-pills">
+            <span class="role-pill">Resettlement Departments</span>
+            <span class="role-pill">Clients (refugees &amp; asylees)</span>
+            <span class="role-pill">Donors</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="approach">
-      <span class="eyebrow">My Role &amp; Approach</span>
-      <h2>A two-part diary study, end to end</h2>
-      <p>I spearheaded and executed a two-part diary study to trace the entire intern lifecycle, from first contact during recruitment through the first weeks of onboarding, capturing both the manager's and the intern's side of the same process in near-real time, rather than relying on retrospective interviews alone.</p>
-      <p style="margin-bottom:0;">I paired the diary data with semi-structured interviews, a stakeholder analysis, journey maps, and personas to represent the different goals in play: what a hiring manager needed to feel confident handing off responsibility, and what a new intern needed to feel oriented instead of thrown in.</p>
+    <section id="context">
+      <span class="eyebrow">Project Context</span>
+      <h2>A recruitment system that hadn't scaled with demand</h2>
+      <p>Following organizational cutbacks, the Community Relations team entered a growth phase creating "significantly increased demand for interns and volunteers." However, recruitment systems, procedures, and staffing remained inadequate for the volume required.</p>
+
+      <h3>Community Relations intern responsibilities</h3>
+      <ul>
+        <li>Communicate with department supervisors in NY and NJ offices regarding staffing needs</li>
+        <li>Recruit qualified interns and volunteers across departments and locations</li>
+        <li>Facilitate onboarding for incoming interns and volunteers</li>
+        <li>Provide training and guidance to new Community Relations Interns</li>
+      </ul>
+
+      <p style="margin-bottom:0;"><strong>Why change was necessary.</strong> The Community Relations Intern team bears <b>sole</b> responsibility for recruiting across <b>all</b> departments in both offices. These placements directly influence support-staff availability and, consequently, service quality to clients. An ongoing intern shortage reduces departmental capacity and overall service quality.</p>
+    </section>
+
+    <section id="objectives">
+      <span class="eyebrow">Research Objectives</span>
+      <h2>What the research needed to answer</h2>
+      <ul style="margin-bottom:0;">
+        <li>Understand the needs and motivations of the Community Relations Team and department supervisors</li>
+        <li>Identify pain points in recruitment and onboarding, and uncover their root causes</li>
+        <li>Examine current training processes for Community Relations Interns</li>
+        <li>Discover improvement opportunities for recruitment and onboarding systems</li>
+        <li>Inform the design of efficient, streamlined systems that enhance recruitment, onboarding, and training</li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <span class="eyebrow">Research Methods</span>
+      <h2>Three methods, one end-to-end view of the intern lifecycle</h2>
+
+      <div class="impact-grid cols-3" style="margin-bottom:26px;">
+        <div class="impact-card">
+          <h4>8<br>Interviews</h4>
+          <p>Semi-structured interviews across interns, supervisors &amp; management.</p>
+        </div>
+        <div class="impact-card">
+          <h4>2<br>Focus Groups</h4>
+          <p>90-minute focus groups with six current interns from NY &amp; NJ.</p>
+        </div>
+        <div class="impact-card">
+          <h4>3<br>Days Shadowing</h4>
+          <p>Days shadowing interns in Housing and Adult Education &amp; Economic Empowerment.</p>
+        </div>
+      </div>
+
+      <h3>Semi-structured interviews</h3>
+      <p>Eight interviews with two current Community Relations Interns, one Community Relations Manager, three department supervisors from the NY/NJ offices, and two current interns/volunteers, aimed at understanding lived experiences, pain points, expectations, and inconsistencies across perspectives.</p>
+
+      <h3>Focus groups</h3>
+      <p>Two 90-minute sessions with six current interns from multiple departments across the NY and NJ offices, facilitating collaborative dialogue that surfaced insights peer-to-peer reflection could reach but one-on-one interviews couldn't.</p>
+
+      <h3>Program observation (field study)</h3>
+      <p style="margin-bottom:0;">Three days shadowing interns in the Housing and Adult Education &amp; Economic Empowerment departments, to observe workflow patterns, challenges, workarounds, and how interns actually interacted with team members and resources in their natural work environment.</p>
     </section>
 
     <section id="findings">
       <span class="eyebrow">Key Findings</span>
-      <h2>The gap lived in the handoffs, not the steps</h2>
-      <p style="margin-bottom:0;">The recruitment and onboarding steps mostly existed; what was missing was ownership of the transitions between them. Communication broke down specifically at the handoff points between recruitment and onboarding, and between a manager's expectations and what an intern was actually told to expect. No single document or person carried context across that boundary.</p>
+      <h2>Four recurring pain points, one system that never scaled</h2>
+      <p>Initial discovery surfaced four program pain points behind the intern shortage:</p>
+
+      <ul>
+        <li><strong>Lack of standardization.</strong> Limited formal documentation or process guidance exists for recruitment, and onboarding procedures differ between the NY and NJ offices.</li>
+        <li><strong>Staffing limitations.</strong> The Community Relations team lacks the resources for effective cross-location recruitment.</li>
+        <li><strong>Limited cross-department understanding.</strong> Unclear departmental needs and responsibilities make it difficult to target the right candidates.</li>
+        <li><strong>Historical inaction.</strong> Previous concerns remained unaddressed due to limited intern capacity to act on them.</li>
+      </ul>
+
+      <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/irc/stakeholder-analysis.png" alt="Stakeholder analysis comparing responsibilities, pain points, verbatims, and goals across the Community Relations Team, Department Supervisors, and prospective interns/volunteers" />
+        <figcaption>Stakeholder analysis: who is involved in recruitment and onboarding, what responsibilities they hold, and what their pain points and goals are.</figcaption>
+      </figure>
+
+      <blockquote class="pull-quote">
+        "I believe we need a more organized system to clarify roles and responsibilities. Often, I find myself doing repetitive work, and I just feel confused about my tasks."
+        <cite>— Community Relations Intern</cite>
+      </blockquote>
+      <blockquote class="pull-quote" style="margin-bottom:0;">
+        "We really need an intern. Currently, I am using my own staff to support Arabic language, and this is not sustainable at all."
+        <cite>— Department Supervisor</cite>
+      </blockquote>
     </section>
 
-    <section id="outcome">
-      <span class="eyebrow">Outcome &amp; Impact</span>
-      <h2>Redesigning the handoffs, not just the paperwork</h2>
-      <p>I synthesized the findings into recommendations that redesigned the recruitment-to-onboarding handoff and clarified manager-intern communication at each stage, then presented the insights to the relevant teams. The redesigned process shipped in time for the Summer 2024 intern cycle.</p>
-      <div class="stat-row" style="margin-bottom:0;">
-        <div class="stat-box"><div class="num">25%</div><div class="label">increase in new hires for the Summer 2024 cycle</div></div>
-        <div class="stat-box"><div class="num">2</div><div class="label">stakeholder groups (managers &amp; interns) mapped together for the first time</div></div>
-        <div class="stat-box"><div class="num">1</div><div class="label">self-initiated project, no formal design mandate</div></div>
+    <section id="personas">
+      <span class="eyebrow">Personas</span>
+      <h2>Two people whose goals were pulling against each other</h2>
+      <p>The research repeatedly surfaced the same tension from two directions: a Community Relations Intern stretched across every department's requisitions, and a Department Supervisor who couldn't get the one intern they actually needed. Two personas made that tension concrete enough to design against.</p>
+
+      <figure class="figure white-frame">
+        <img src="../assets/img/irc/persona-victor.png" alt="Persona of Victor Zhao, Community Relations Intern, showing his about, frustrations, and goals" />
+        <figcaption>Victor Zhao — Community Relations Intern, coordinating recruitment across every department in NY &amp; NJ.</figcaption>
+      </figure>
+      <figure class="figure white-frame" style="margin-bottom:0;">
+        <img src="../assets/img/irc/persona-eva.png" alt="Persona of Eva García Piñedo, Department Supervisor, showing her about, frustrations, and goals" />
+        <figcaption>Eva García Piñedo — Department Supervisor, a Resettlement caseworker going without the intern support she needs.</figcaption>
+      </figure>
+    </section>
+
+    <section id="mapping">
+      <span class="eyebrow">Process Mapping</span>
+      <h2>Mapping the handoffs, not just the steps</h2>
+      <p>A process map of the Community Relations Team's day-to-day work traced their actions, emotions, and pain points at each stage of recruitment and onboarding, from posting a role through sending the first welcome email.</p>
+
+      <figure class="figure white-frame">
+        <img src="../assets/img/irc/journey-map.png" alt="Organization process map for the Community Relations Team across Recruitment, Screening, and Onboarding stages, showing actions, emotions, pain points, verbatims, and opportunities" style="padding:24px 0;" />
+        <figcaption>Organization process map: actions, emotions, pain points, and opportunities across Recruitment, Screening &amp; Interview, and Onboarding.</figcaption>
+      </figure>
+
+      <p>I then consolidated that view into a cross-functional map spanning both offices, giving every stakeholder, from department supervisors to interns themselves, a single, centralized view of each step in the process.</p>
+
+      <figure class="figure" style="margin-bottom:0;">
+        <img src="../assets/img/irc/process-map.png" alt="Cross-functional IRC NY & NJ intern/volunteer recruitment and onboarding process map, broken into Recruitment, Screening & Interview, and Onboarding stages across Department Supervisor, Community Relations Team, and Intern/Volunteer swimlanes" />
+        <figcaption>Cross-functional recruitment &amp; onboarding process map, consolidating the NY &amp; NJ workflow into one service blueprint.</figcaption>
+      </figure>
+    </section>
+
+    <section id="recommendations">
+      <span class="eyebrow">Recommendations</span>
+      <h2>Two challenges, three priority recommendations</h2>
+
+      <h3>Two recurring challenges</h3>
+      <div class="impact-grid cols-2" style="margin-bottom:34px;">
+        <div class="impact-card">
+          <h4>Lack of accessible communication channels</h4>
+          <p>Communication gaps between the Community Relations team and resettlement supervisors created onboarding confusion and limited departmental understanding, resulting in misaligned intern placements that hurt both satisfaction and program effectiveness.</p>
+        </div>
+        <div class="impact-card">
+          <h4>Lack of clarity and consistency in process</h4>
+          <p>Although a standardized workflow chart had been developed, the short intern tenure made consistent implementation difficult, particularly when training incoming Community Relations team members.</p>
+        </div>
+      </div>
+
+      <h3>Three priority recommendations</h3>
+      <div class="impact-grid cols-3" style="margin-bottom:0;">
+        <div class="impact-card">
+          <h4>1. Prioritize Community Relations intern placement</h4>
+          <p>Given the high cognitive load and limited time managing multi-departmental inquiries, staff this team first. At least 3–4 Community Relations Interns should be in place before recruiting for other departments, to ensure adequate capacity for delegation and coordination.</p>
+        </div>
+        <div class="impact-card">
+          <h4>2. Foster alignment between interns &amp; hiring departments</h4>
+          <p>Reading job descriptions alone proved insufficient for Community Relations Interns to understand departmental scope. I recommended interns regularly shadow department meetings and participate in key activities, to better grasp department-specific needs and improve placement quality.</p>
+        </div>
+        <div class="impact-card">
+          <h4>3. Standardize training &amp; regular check-ins</h4>
+          <p>Given cross-office responsibilities, I recommended a centralized, externally-facing intake sheet where department supervisors input role-specific needs and expectations directly, making recruitment "more transparent, structured, and efficient."</p>
+        </div>
       </div>
     </section>
 
-    <section id="reflection" style="border-bottom:none; padding-bottom:8px;">
+    <section id="reflection" style="border-bottom:none; padding-bottom:38px;">
       <div class="reflect-box">
         <span class="eyebrow">Reflection</span>
-        <p style="margin-bottom:0;">This was the first time I built something instead of just writing up what I'd found: the moment the anthropology-to-design shift stopped being theoretical. Noticing a human problem wasn't the finish line anymore; I wanted to sit with it long enough to hand back something that actually changed how people experienced the process.</p>
+        <p style="margin-bottom:0;">Nothing in my job description asked me to fix this. But it was exactly the kind of insight I couldn't just leave on the table, so I initiated the project myself. It was the first time I built something instead of just writing up what I'd found: the moment noticing a human problem stopped being the finish line, and I wanted to sit with it long enough to hand back something that could actually change how people experienced the process.</p>
       </div>
     </section>
 
     <div class="case-nav">
       <a href="edtech-usability.html">
         <span class="dir">← Previous project</span>
-        <span class="title">Gamified EdTech Usability</span>
+        <span class="title">Evaluating &amp; Redesigning a Gamified EdTech Solution</span>
       </a>
       <a href="../projects.html" class="next">
         <span class="dir">Back to →</span>
