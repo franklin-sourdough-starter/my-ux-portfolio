@@ -27,6 +27,25 @@
   </div>
 </nav>
 
+<div class="mobile-toc" id="mobileToc">
+  <div class="wrap">
+    <div class="mobile-toc-bar" id="mobileTocBar">
+      <span class="dot"></span>
+      <span class="current" id="mobileTocCurrent">Overview</span>
+      <span class="progress" id="mobileTocProgress">1/6</span>
+      <span class="chev">&#9662;</span>
+    </div>
+    <div class="mobile-toc-sheet" id="mobileTocSheet">
+      <a href="#overview" class="active"><span class="dot"></span>Overview</a>
+      <a href="#context"><span class="dot"></span>Context</a>
+      <a href="#research"><span class="dot"></span>Research</a>
+      <a href="#response"><span class="dot"></span>Bulk GTIN Search</a>
+      <a href="#task-creation"><span class="dot"></span>Task Creation</a>
+      <a href="#reflection"><span class="dot"></span>Reflection</a>
+    </div>
+  </div>
+</div>
+
 <div class="wrap case-layout">
   <aside class="case-sidebar">
     <a href="../projects.html" class="back-link">← Back to Work</a>
@@ -34,7 +53,7 @@
       <a href="#overview" class="active"><span class="dot"></span>Overview</a>
       <a href="#context"><span class="dot"></span>Context</a>
       <a href="#research"><span class="dot"></span>Research</a>
-      <a href="#response"><span class="dot"></span>Bulk Search</a>
+      <a href="#response"><span class="dot"></span>Bulk GTIN Search</a>
       <a href="#task-creation"><span class="dot"></span>Task Creation</a>
       <a href="#reflection"><span class="dot"></span>Reflection</a>
     </nav>
@@ -57,7 +76,7 @@
     <section id="overview" style="padding:30px 0 48px;">
       <span class="eyebrow">Overview</span>
       <h2 style="margin:8px 0 14px;">What I did</h2>
-      <p class="lede" style="max-width:720px;">I designed the bulk GTIN search and inline task-creation flow for Kroger's item-management platform.</p>
+      <p style="max-width:720px;">I designed the bulk GTIN search and inline task-creation flow for Kroger's item-management platform.</p>
 
       <div class="impact-grid cols-2" style="margin-bottom:0;">
         <div class="impact-card">
@@ -120,8 +139,8 @@
     </section>
 
     <section id="response">
-      <span class="eyebrow">Design Response</span>
-      <h2>Bulk Search</h2>
+      <span class="eyebrow">Design - Bulk Search</span>
+      <h2>Bulk GTIN Search</h2>
       <p>Since there was no existing bulk search pattern to build on, I leveraged <b>Figma Make</b> and <b>Kroger's design system</b> to rapidly prototype concepts. I then facilitated daily design reviews with senior designers to align on the best direction and technical feasibility. That process converged on two candidate solutions for how a specialist would actually enter a bulk list, each taken to a build-ready level of detail, so the call on which one shipped could come down to timeline and engineering feasibility rather than design preference alone.</p>
 
       <figure class="figure">
@@ -219,7 +238,7 @@
     </section>
 
     <section id="task-creation">
-      <span class="eyebrow">Design Response</span>
+      <span class="eyebrow">Design - Task Creation</span>
       <h2>Task Creation</h2>
       <p>The second piece closed the loop: from the search results page, a specialist can select item(s) and create a task directly, instead of leaving the results to start a separate task-creation flow and losing their place in the list. Task creation on this page isn't owned by one team, though: the top toolbar belongs to the team that owns task management across the platform, while the results table and its bulk actions belong to the team that owns the item-record edit experience. So I designed two options, one aligned with each team's existing pattern, rather than forcing either one to break from what specialists already know from other parts of the platform.</p>
 
