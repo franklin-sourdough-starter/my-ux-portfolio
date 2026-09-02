@@ -10,8 +10,118 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  body.locked > *:not(#password-gate) { display: none !important; }
+  #password-gate {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b0b0c;
+    z-index: 9999;
+    padding: 24px;
+  }
+  #password-gate .password-gate-box {
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;
+    font-family: 'Inter', sans-serif;
+  }
+  #password-gate h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    margin: 0 0 8px;
+  }
+  #password-gate p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin: 0 0 20px;
+  }
+  #password-gate form {
+    display: flex;
+    gap: 8px;
+  }
+  #password-gate input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #1a1a1c;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  #password-gate button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #f2f2f2;
+    color: #0b0b0c;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #password-gate-error {
+    margin-top: 14px;
+    margin-bottom: 0;
+    color: #ff6b6b;
+    font-size: 0.85rem;
+  }
+</style>
 </head>
-<body>
+<body class="locked">
+
+<div id="password-gate">
+  <div class="password-gate-box">
+    <h2>This project is password protected</h2>
+    <p>Enter the password to view this case study.</p>
+    <form id="password-gate-form" autocomplete="off">
+      <input type="password" id="password-gate-input" placeholder="Password" autocomplete="off" required />
+      <button type="submit">Unlock</button>
+    </form>
+    <p id="password-gate-error" hidden>Incorrect password. Try again.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var PASSWORD_HASH = '057ba03d6c44104863dc7361fe4578965d1887360f90a0895882e58a6248fc86';
+
+  function sha256Hex(str) {
+    var buf = new TextEncoder().encode(str);
+    return crypto.subtle.digest('SHA-256', buf).then(function (hashBuf) {
+      return Array.prototype.map
+        .call(new Uint8Array(hashBuf), function (b) { return b.toString(16).padStart(2, '0'); })
+        .join('');
+    });
+  }
+
+  function unlock() {
+    document.body.classList.remove('locked');
+    var gate = document.getElementById('password-gate');
+    if (gate) gate.remove();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('password-gate-form');
+    var input = document.getElementById('password-gate-input');
+    var error = document.getElementById('password-gate-error');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      sha256Hex(input.value).then(function (hash) {
+        if (hash === PASSWORD_HASH) {
+          unlock();
+        } else {
+          error.hidden = false;
+          input.value = '';
+          input.focus();
+        }
+      });
+    });
+  });
+})();
+</script>
 
 <nav class="site-nav">
   <div class="wrap">
@@ -128,7 +238,7 @@
 
       <figure class="figure">
         <img src="../assets/img/edtech/user-research-2.png" alt="Photo from a user research session with a middle school student" />
-        <figcaption>Visiting a classroom to observe students during UAT.</figcaption>
+        <figcaption>Visiting a classroom to observe students during UAT (conducted by another team).</figcaption>
       </figure>
 
       <h3>Stakeholder &amp; user interview</h3>
@@ -303,7 +413,7 @@
     <section id="launch" style="border-bottom:none; padding-bottom:38px;">
       <span class="eyebrow">Product Launch</span>
       <h2>Live across 10 school districts</h2>
-      <p>The redesigned Team Drafting page shipped and is now live across 10 school districts nationwide.</p>
+      <p>The redesigned Team Drafting page is now live across 10 school districts nationwide.</p>
       <figure class="figure" style="margin-bottom:0;">
         <img src="../assets/img/edtech/launched-interface.png" alt="The launched FSML Team Drafting page interface" />
         <figcaption>The launched Team Drafting page.</figcaption>
