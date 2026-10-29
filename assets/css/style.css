@@ -814,6 +814,10 @@ footer {
 .bakery-logo { width: 150px; height: 150px; object-fit: contain; mix-blend-mode: multiply; flex: none; }
 @media (max-width: 700px) {
   .footer-notepad { flex-direction: column; align-items: flex-start; }
-  .chalk-arrow { transform: rotate(75deg); margin: 0 0 0 40px; width: 90px; }
+  .chalk-arrow { transform: rotate(80deg); align-self: flex-end; margin: -6px 62px -14px 0; width: 80px; }
   .bakery-logo { align-self: flex-end; width: 130px; height: 130px; }
+}
+@media (max-width: 700px) {
+  .section { padding-bottom: 44px; }
+  footer { margin-top: 0; padding: 36px 0; }
 }
