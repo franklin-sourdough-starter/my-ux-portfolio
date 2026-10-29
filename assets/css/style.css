@@ -268,6 +268,23 @@ p { margin: 0 0 1.1em; color: var(--ink-soft); }
 }
 .pull-quote cite { display: block; margin-top: 12px; font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft); font-style: normal; }
 
+/* ---------- Recommendations (home) ---------- */
+.rec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.rec-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 26px 26px 22px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.rec-card p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.55; color: var(--ink); margin-bottom: 20px; flex: 1; }
+.rec-card cite { font-style: normal; font-size: 0.85rem; color: var(--ink-soft); line-height: 1.45; }
+.rec-card cite strong { display: block; color: var(--ink); font-size: 0.95rem; }
+@media (max-width: 860px) { .rec-grid { grid-template-columns: 1fr; } }
+
 /* ---------- Footer ---------- */
 footer {
   border-top: 1px solid var(--line);
@@ -775,4 +792,28 @@ footer {
   }
   .mobile-toc-sheet a.active { color: var(--accent-ink); font-weight: 700; }
   .mobile-toc-sheet a.active .dot { background: var(--accent); }
+}
+
+/* ---------- Footer notepad ---------- */
+.footer-notepad { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.scribble-note {
+  max-width: 440px;
+  padding: 4px 8px 2px;
+  transform: rotate(-1deg);
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 29px, rgba(46,71,86,0.16) 29px, rgba(46,71,86,0.16) 30px);
+}
+.scribble-note .hand {
+  font-family: "Caveat", "Bradley Hand", cursive;
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 30px;
+  color: var(--ink-blue);
+  margin: 0;
+}
+.chalk-arrow { flex: 1 1 120px; max-width: 170px; height: auto; color: var(--ink-soft); opacity: 0.8; }
+.bakery-logo { width: 150px; height: 150px; object-fit: contain; mix-blend-mode: multiply; flex: none; }
+@media (max-width: 700px) {
+  .footer-notepad { flex-direction: column; align-items: flex-start; }
+  .chalk-arrow { transform: rotate(75deg); margin: 0 0 0 40px; width: 90px; }
+  .bakery-logo { align-self: flex-end; width: 130px; height: 130px; }
 }
