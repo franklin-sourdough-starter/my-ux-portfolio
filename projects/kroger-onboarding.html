@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -70,8 +70,8 @@
   <main class="case-main">
     <header class="case-hero-block">
       <div class="tags"><span class="tag industry">Research</span></div>
-      <h1>Modernizing a Legacy System: Designing for the Onboarding Experience to Kroger's Enterprise Item Management Platform</h1>
-      <p class="lede">Item data is the backbone of Kroger's business. I ran a Double Diamond process, from cross-functional alignment through SME interviews to a shipped three-layer support framework. The result: an onboarding and transition experience that carries teams off fragmented legacy systems and spreadsheets and onto a single, centralized item-management platform.</p>
+      <h1>Bridging two systems: Designing for the Onboarding Experience to Kroger's Enterprise Item Management Platform</h1>
+      <p class="lede">Item data is the backbone of Kroger's business. Through a Double Diamond approach, I moved from cross-functional alignment through SME interviews to a shipped three-layer support framework, delivering an onboarding and transition experience that carries teams off fragmented legacy systems and spreadsheets and onto a single, centralized item-management platform.</p>
 
       <div class="case-meta">
         <div><div class="label">Role</div><div class="value">Product Design Intern</div></div>
@@ -115,14 +115,14 @@
       <span class="eyebrow">Context</span>
       <h2>Item data is the backbone of Kroger</h2>
       <p>Every item's data (its attributes, pricing, packaging, distribution rules) determines everything downstream: what shows up at a distribution center, how it moves through the supply chain, and what a customer finds on the shelf at a Kroger store. Get that data wrong, or too slow, and the effects ripple across the entire business.</p>
-      <p>But the way that data actually gets managed today is fragmented: multiple legacy systems and countless spreadsheets, stitched together as much by institutional memory as by process. Kroger's modernization effort aims to retire those legacy systems and Excel-centered workflows, <strong>manual and fragmented</strong>, in favor of a single, centralized item-management platform that's <strong>unified and intuitive</strong>.</p>
+      <p>But the way that data actually gets managed today is fragmented: multiple legacy systems and countless spreadsheets. Kroger's modernization effort aims to retire those legacy systems and Excel-centered workflows, <strong>manual and fragmented</strong>, in favor of a single, centralized item-management platform that's <strong>unified and intuitive</strong>.</p>
       <p style="margin-bottom:0;"><strong>My project was to design the bridge between the two:</strong> the onboarding and transition experience that would carry each role-specific user group from the old way of working into the new one, without breaking the flow of a business that runs on this data every day.</p>
     </section>
 
     <section id="alignment">
       <span class="eyebrow">Cross-Functional Alignment</span>
       <h2>Before the Double Diamond: aligning on requirement and timeline</h2>
-      <p>A project like this doesn't start with research. It starts with alignment. Before I ran any interviews, I worked with <strong>5 product managers and 3 product designers, across 2 separate teams</strong> (task management and edit experience) to align on the onboarding timeline and the dependencies between our workstreams. Onboarding couldn't be designed in a vacuum: it had to land in sync with each team's own launch dates, feature freezes, and cutover plans.</p>
+      <p>A project like this doesn't start with research. It starts with alignment. Before I ran any interviews, I worked with <strong>5 product managers</strong> and <strong>3 product designers</strong>, across <strong>2 separate teams</strong> (task management and edit experience) to align on the onboarding timeline and the dependencies between our workstreams. Onboarding couldn't be designed in a vacuum: it had to land in sync with each team's own priorities and timeline.</p>
       <p>That meant constant, ongoing communication, not a single kickoff meeting. I stayed in the loop on priority shifts and shipped-date changes from both teams so the onboarding plan never fell out of sync with what was actually being built.</p>
 
       <figure class="figure" style="margin-bottom:0;">
@@ -137,16 +137,20 @@
       <p>With the timeline aligned, I followed the Double Diamond process in the research and design work: one diamond to understand the problem, one to build the solution. Emerging out of the Discover and Define phases, I converged on a clear picture of who was affected and how they actually worked today. I then diverged again to design the support structure, validate it with real users, then converged to ship and iterate.</p>
 
       <div class="diamond-wrap">
-        <svg width="100%" viewBox="0 0 920 214" role="img" aria-label="Double Diamond process: Discover, Define, Develop, Deliver">
+        <svg width="100%" viewBox="0 -38 920 252" role="img" aria-label="Double Diamond process: Understanding (Discover, Define) and Creating (Develop, Deliver)">
+          <text x="240" y="-14" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#3d3a33" letter-spacing="0.08em">UNDERSTANDING</text>
+          <text x="680" y="-14" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#3d3a33" letter-spacing="0.08em">CREATING</text>
+          <line x1="20" y1="-2" x2="460" y2="-2" stroke="#3d3a33" stroke-width="1.5"/>
+          <line x1="460" y1="-2" x2="900" y2="-2" stroke="#3d3a33" stroke-width="1.5"/>
           <line x1="20" y1="95" x2="900" y2="95" stroke="#e4dcce" stroke-width="1"/>
           <polygon points="20,95 240,14 240,176" fill="#c1502e" opacity="1"/>
           <polygon points="240,14 460,95 240,176" fill="#4f6357" opacity="1"/>
           <polygon points="460,95 680,14 680,176" fill="#2e4756" opacity="1"/>
           <polygon points="680,14 900,95 680,176" fill="#c99a3c" opacity="1"/>
-          <text x="130" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#c1502e" letter-spacing="0.02em">Discover</text>
-          <text x="350" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#4f6357" letter-spacing="0.02em">Define</text>
-          <text x="570" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#2e4756" letter-spacing="0.02em">Develop</text>
-          <text x="790" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#c99a3c" letter-spacing="0.02em">Deliver</text>
+          <text x="130" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#c1502e" letter-spacing="0.02em">Discover</text>
+          <text x="350" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#4f6357" letter-spacing="0.02em">Define</text>
+          <text x="570" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#2e4756" letter-spacing="0.02em">Develop</text>
+          <text x="790" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#c99a3c" letter-spacing="0.02em">Deliver</text>
         </svg>
       </div>
 
@@ -168,10 +172,10 @@
           <polygon points="240,14 460,95 240,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="460,95 680,14 680,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="680,14 900,95 680,176" fill="#e4dcce" opacity="0.55"/>
-          <text x="130" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#c1502e" letter-spacing="0.02em">Discover</text>
-          <text x="350" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
-          <text x="570" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
-          <text x="790" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
+          <text x="130" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#c1502e" letter-spacing="0.02em">Discover</text>
+          <text x="350" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
+          <text x="570" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
+          <text x="790" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
         </svg>
       </div>
       <h2 style="margin:0 0 20px;">Understanding a process that barely existed</h2>
@@ -179,7 +183,7 @@
 
       <figure class="figure">
         <img src="../assets/img/kroger/research-session.png" alt="Notes from a contextual inquiry session with a user group" />
-        <figcaption>Semi-structured interview with a user group: watching how they actually work in the legacy system, not just how the process says they should.</figcaption>
+        <figcaption>Contextual inquiry: watching how users actually work in the legacy system, not just how the process says they should.</figcaption>
       </figure>
 
       <h3>Who I talked to</h3>
@@ -258,10 +262,10 @@
           <polygon points="240,14 460,95 240,176" fill="#4f6357" opacity="1"/>
           <polygon points="460,95 680,14 680,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="680,14 900,95 680,176" fill="#e4dcce" opacity="0.55"/>
-          <text x="130" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
-          <text x="350" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#4f6357" letter-spacing="0.02em">Define</text>
-          <text x="570" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
-          <text x="790" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
+          <text x="130" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
+          <text x="350" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#4f6357" letter-spacing="0.02em">Define</text>
+          <text x="570" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
+          <text x="790" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
         </svg>
       </div>
       <h2 style="margin:0 0 20px;">Turning 19 conversations into a problem per group</h2>
@@ -277,7 +281,7 @@
         </figure>
         <figure class="figure">
           <img src="../assets/img/kroger/jtbd-card-example.png" alt="A single Jobs To Be Done card, zoomed in, reading: as a FC specialist, when I am new and don't understand how it differs, I want to quickly understand how my work is structured, so that I can confidently start completing tasks without relying on external documents or asking others, by first learning the core workflow." />
-          <figcaption>One card, zoomed in: situation, motivation, and what success looks like.</figcaption>
+          <figcaption>What a successful onboarding should look like for FC specialist.</figcaption>
         </figure>
       </div>
 
@@ -306,10 +310,10 @@
           <polygon points="240,14 460,95 240,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="460,95 680,14 680,176" fill="#2e4756" opacity="1"/>
           <polygon points="680,14 900,95 680,176" fill="#e4dcce" opacity="0.55"/>
-          <text x="130" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
-          <text x="350" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
-          <text x="570" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#2e4756" letter-spacing="0.02em">Develop</text>
-          <text x="790" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
+          <text x="130" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
+          <text x="350" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
+          <text x="570" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#2e4756" letter-spacing="0.02em">Develop</text>
+          <text x="790" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Deliver</text>
         </svg>
       </div>
       <h2 style="margin:0 0 20px;">Mapping the transition before designing the guide</h2>
@@ -342,10 +346,10 @@
           <polygon points="240,14 460,95 240,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="460,95 680,14 680,176" fill="#e4dcce" opacity="0.55"/>
           <polygon points="680,14 900,95 680,176" fill="#c99a3c" opacity="1"/>
-          <text x="130" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
-          <text x="350" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
-          <text x="570" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
-          <text x="790" y="202" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" fill="#c99a3c" letter-spacing="0.02em">Deliver</text>
+          <text x="130" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Discover</text>
+          <text x="350" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Define</text>
+          <text x="570" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#4a433d" letter-spacing="0.02em">Develop</text>
+          <text x="790" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#c99a3c" letter-spacing="0.02em">Deliver</text>
         </svg>
       </div>
       <h2 style="margin:0 0 20px;">Creating the three-layer structure, then validating and iterating</h2>
@@ -402,7 +406,7 @@
       <h3>Layer 3: The Custom AI Assistant</h3>
       <p>Guides solve the "I need to learn this" problem. They don't solve the "I need an answer right <b>now</b>" problem. Users onboarding onto a new system are still busy doing their jobs; they don't want to search through a document to find one field's validation rule. The assistant exists to answer the question <em><b>What's the fastest way to get help?</b></em>, giving on-demand guidance, troubleshooting, and direct access to reference documentation, without anyone having to leave their workflow.</p>
 
-      <figure class="figure">
+      <figure class="figure" style="max-width:520px;">
         <img src="../assets/img/kroger/assistant-chat-example.png" alt="Onboarding assistant chat showing suggested prompts and a conversation where a user asks whether an item is a Stickering Project item, with the assistant confirming, listing its PLU number and description, and reminding the user not to set it up in the legacy system" />
         <figcaption>The assistant in a live conversation: confirming an item's status, surfacing the exact fields needed, and flagging a rule the user might otherwise miss.</figcaption>
       </figure>
@@ -410,14 +414,14 @@
       <div class="decision-box">
         <h4>Choosing the platform: Microsoft Copilot Studio vs. a custom-built agent by Kroger</h4>
         <p style="margin-bottom:10px;">I first explored building the assistant in Microsoft Copilot Studio. In testing, I ran into blocking issues, including a knowledge source blocked by data policy and conflicting data-policy groups preventing publication, that made it a real feasibility and data-security risk for handling internal item data.</p>
-        <figure class="figure" style="margin:14px 0;">
+        <figure class="figure" style="margin:14px 0; max-width:520px;">
           <img src="../assets/img/kroger/copilot-studio-blockers.png" alt="Copilot Studio agent status panel showing two blocking errors: a knowledge source blocked by data policy, and items blocked by conflicting data policy groups" />
           <figcaption>Copilot Studio blocked publication over data-policy conflicts: the feasibility and data-security risk that ruled it out.</figcaption>
         </figure>
         <p style="margin-bottom:0;">I opted instead for Kroger's own internal custom-agent platform. It sidestepped the data-policy conflicts, kept everything inside Kroger's existing security boundary, and was the more cost-effective path to a production assistant.</p>
       </div>
 
-      <figure class="figure">
+      <figure class="figure" style="max-width:520px;">
         <img src="../assets/img/kroger/custom-agent.png" alt="Configuration screen for the custom AI onboarding assistant, showing system prompt and user instructions fields, with the platform name redacted." />
         <figcaption>Configuring the onboarding assistant on Kroger's internal custom-agent platform: system prompt, user-facing instructions, and knowledge context.</figcaption>
       </figure>
@@ -425,7 +429,7 @@
       <h4>Designing the system prompt</h4>
       <p>The assistant is only as good as the behavior I write into it. I structured the system prompt around context, users, and core capabilities (onboarding support, workflow guidance, reference support, troubleshooting), then went deep on conversation flow, tone, and, critically, where the assistant should <em>stop</em>.</p>
 
-      <figure class="figure">
+      <figure class="figure" style="max-width:520px;">
         <img src="../assets/img/kroger/system-prompt-toc.png" alt="Table of contents for the onboarding assistant's system prompt, covering context, users, core capabilities, conversation flow, output guidelines including tone and style, cross-cultural sensitivity, guardrails and scope, and offramps" />
         <figcaption>The system prompt's own table of contents: tone &amp; style, guardrails, and offramps are first-class sections, not an afterthought.</figcaption>
       </figure>
@@ -434,7 +438,7 @@
 
       <p><strong>Off-ramps.</strong> I designed explicit rules for when the assistant should redirect rather than answer: out-of-scope Kroger systems, features not documented in the training guide, bug reports, and access disputes each get their own acknowledge → redirect → engage pattern, with example phrasing so the tone stays consistent even when the assistant is saying "I can't help with that."</p>
 
-      <figure class="figure">
+      <figure class="figure" style="max-width:520px;">
         <img src="../assets/img/kroger/system-prompt-offramps.png" alt="System prompt section on offramps, showing scope enforcement, out-of-scope topic handling, and hallucination prevention rules with example redirect phrasing" />
         <figcaption>Offramps: scope enforcement and out-of-scope handling, written with example phrasing so the assistant redirects consistently instead of guessing.</figcaption>
       </figure>
@@ -446,8 +450,8 @@
         <figcaption>Image-handling rules: what to do, what not to do, and how to ask for clarification when a screenshot can't be interpreted confidently.</figcaption>
       </figure>
 
-      <figure class="figure">
-        <img src="../assets/img/kroger/assistant-tote-fill-calc.png" alt="The onboarding assistant running a step-by-step Max Tote Fill calculation from an item's dimensions, weight, and tote type, arriving at a final max tote fill number" style="max-height:640px; width:auto; margin:0 auto;" />
+      <figure class="figure" style="max-width:520px;">
+        <img src="../assets/img/kroger/assistant-tote-fill-calc.png" alt="The onboarding assistant running a step-by-step Max Tote Fill calculation from an item's dimensions, weight, and tote type, arriving at a final max tote fill number" />
         <figcaption>The assistant in use, answering a role-specific question by doing pre-programmed calculations in plain language instead of pointing users to documentation where they have to calculate input manually.</figcaption>
       </figure>
 
